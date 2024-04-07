@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Column 1 Data (objname) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_chat_view"
+        android:layout_marginEnd="80dp">
+
+
+        <TextView
+        android:id="@+id/obj_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:padding="8dp" />
+    </LinearLayout>
+    <!-- Column 2 Data (objimage) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_chat_view"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="80dp"
+        >
+
+    <ImageView
+        android:id="@+id/obj_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp" />
+    </LinearLayout>
+</RelativeLayout>

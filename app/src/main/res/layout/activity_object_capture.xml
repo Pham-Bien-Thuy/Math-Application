@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObjectCaptureActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/title"
+        android:text="Model SSD Mobilenet"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/title"
+        android:id="@+id/imageViewClassify"
+        android:src="@drawable/ic_android"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:backgroundTint="@color/background"
+        android:id="@+id/selectBtn"
+        android:layout_below="@id/imageViewClassify"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/captureBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Image"
+        android:backgroundTint="@color/background"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/selectBtn"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/predictSingleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predict Single Object"
+        android:backgroundTint="@color/background"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/captureBtn"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/predictMultiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Predict Multiple Object"
+        android:backgroundTint="@color/background"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/predictSingleBtn"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Result: "
+        android:id="@+id/result"
+        android:textAlignment="center"
+        android:layout_below="@id/predictMultiBtn"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
